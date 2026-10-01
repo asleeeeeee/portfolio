@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="experience-header">
+    <p class="experience-kicker">Career Journey</p>
+    <h1>Experience</h1>
+    <p>A snapshot of where I have contributed, what I have owned, and the results I helped deliver.</p>
+</section>
+
+<section class="experience-timeline-section">
+    <div class="experience-showcase">
+        <article class="experience-feature-card">
+            <div class="experience-feature-header">
+                <span class="experience-badge">Internship</span>
+                <span class="experience-company-inline">Syntactics Inc.</span>
+            </div>
+
+            <h2>Web Project<br>Manager<br>Intern</h2>
+
+            <div class="experience-feature-meta">
+                <div class="meta-item">
+                    <span>Role focus</span>
+                    <strong>Delivery + Coordination</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Team style</span>
+                    <strong>Clear, proactive communication</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Strength</span>
+                    <strong>Structure under deadlines</strong>
+                </div>
+            </div>
+        </article>
+
+        <div class="experience-detail-panel">
+            <div class="experience-detail-header">
+                <h3>What I did</h3>
+                <div class="experience-filter-tabs">
+                    <button class="filter-chip active" type="button">All</button>
+                    <button class="filter-chip" type="button">Define</button>
+                    <button class="filter-chip" type="button">Coordinate</button>
+                    <button class="filter-chip" type="button">Deliver</button>
+                </div>
+            </div>
+
+            <ul class="experience-detail-list">
+                <li data-category="Define">
+                    <span class="detail-icon">▣</span>
+                    <span>Gathered and documented project requirements and client feedback.</span>
+                </li>
+                <li data-category="Define">
+                    <span class="detail-icon">▣</span>
+                    <span>Assisted with UI/UX planning, wireframes, and website layouts.</span>
+                </li>
+                <li data-category="Coordinate">
+                    <span class="detail-icon">◌</span>
+                    <span>Coordinated web development projects with clients, developers, and designers.</span>
+                </li>
+                <li data-category="Deliver">
+                    <span class="detail-icon">≡</span>
+                    <span>Tracked project tasks, deadlines, and deliverables using Bitrix24.</span>
+                </li>
+                <li data-category="Coordinate">
+                    <span class="detail-icon">◔</span>
+                    <span>Followed up with team members to ensure timely project completion.</span>
+                </li>
+                <li data-category="Deliver">
+                    <span class="detail-icon">▤</span>
+                    <span>Prepared meeting minutes, status updates, and project documentation.</span>
+                </li>
+                <li data-category="Deliver">
+                    <span class="detail-icon">✓</span>
+                    <span>Conducted QA testing and coordinated issue resolution with developers.</span>
+                </li>
+            </ul>
+
+            <div class="experience-detail-footer">
+                <div class="experience-tag-row">
+                    <span class="experience-tag">Documentation</span>
+                    <span class="experience-tag">Stakeholder updates</span>
+                    <span class="experience-tag">Milestone tracking</span>
+                </div>
+
+                <a class="experience-sample-link" href="https://drive.google.com/drive/folders/1VXGKrgbPrzFyU_vkzw8KgmE5DQXpfXBB?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    Project documentation sample <span>↗</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <h2>Want to see my <span>project work</span> too?</h2>
+    <p>Explore practical builds that reflect the same process, ownership, and attention to detail.</p>
+    <div class="cta-buttons">
+        <a href="/projects" class="primary-btn">View Projects</a>
+        <a href="/contact" class="secondary-btn">Get In Touch</a>
+    </div>
+</section>
+
+{% endblock %}

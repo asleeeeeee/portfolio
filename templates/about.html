@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- About Hero -->
+<section class="about-hero">
+    <div class="about-hero-left">
+        <h1>Hey, I'm Ashley — a BSIT Graduate based in the Philippines.</h1>
+        
+        <p>
+            Passionate about building systems, improving business processes, and transforming ideas into digital solutions. I combine technical expertise with project management skills to deliver impactful results.
+        </p>
+
+        <div class="about-buttons">
+            <a href="/projects" class="primary-btn">View my work</a>
+            <a href="/contact" class="secondary-btn">Get in touch</a>
+        </div>
+    </div>
+
+    <div class="about-hero-right">
+        <div class="about-profile-container">
+            <img src="{{ url_for('static', filename='profile.png') }}" alt="Ann">
+        </div>
+    </div>
+</section>
+
+<!-- Core Values -->
+<section class="core-values-section">
+    <h2>My Core Values</h2>
+    
+    <div class="values-grid">
+        <div class="value-card">
+            <h3>Innovation-Focused</h3>
+            <p>Always seeking creative solutions to complex problems and staying ahead of industry trends.</p>
+        </div>
+
+        <div class="value-card">
+            <h3>Client-Centric</h3>
+            <p>Understanding client needs deeply and delivering solutions that exceed expectations.</p>
+        </div>
+
+        <div class="value-card">
+            <h3>Quality-Oriented</h3>
+            <p>Committed to excellence in every aspect of work, from code to documentation.</p>
+        </div>
+
+        <div class="value-card">
+            <h3>Collaborative Spirit</h3>
+            <p>Believing that great things are built together through communication and teamwork.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Tech Stack Carousel -->
+<section class="tech-carousel-section">
+    <h2>Technologies & Tools</h2>
+    
+    <div class="carousel-wrapper">
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <i class="fa-brands fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-docker"></i>
+                    <p>Docker</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-solid fa-database"></i>
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <p>MongoDB</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-solid fa-code"></i>
+                    <p>Django</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-git"></i>
+                    <p>Git</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-solid fa-code"></i>
+                    <p>HTML/CSS</p>
+                </div>
+                <!-- Duplicate set for seamless loop -->
+                <div class="carousel-item">
+                    <i class="fa-brands fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-docker"></i>
+                    <p>Docker</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-solid fa-database"></i>
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <p>MongoDB</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-solid fa-code"></i>
+                    <p>Django</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-git"></i>
+                    <p>Git</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-brands fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fa-solid fa-code"></i>
+                    <p>HTML/CSS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Beyond the Code -->
+<section class="beyond-code-section">
+    <h2>Beyond the code</h2>
+    
+    <p>
+        When I'm not building digital solutions, you'll find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers. I'm passionate about continuous learning and sharing knowledge with the community.
+    </p>
+
+    <p>
+        My journey from BSIT graduation to professional development has shaped my approach to problem-solving and collaboration, making me a versatile professional ready to tackle any challenge.
+    </p>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <h2>
+        Let's build something
+        <span>amazing together</span>
+    </h2>
+
+    <p>
+        Open for entry-level opportunities and collaboration.
+    </p>
+
+    <a href="/contact" class="primary-btn">
+        Start a Conversation
+    </a>
+</section>
+
+{% endblock %}

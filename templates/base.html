@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ashley Cassandra</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='AC.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <h2>Ashley Cassandra Tucaling</h2>
+
+    <ul>
+        <li><a href="/" class="nav-link {% if request.path == '/' %}active{% endif %}">Home</a></li>
+        <li><a href="/about" class="nav-link {% if request.path == '/about' %}active{% endif %}">About</a></li>
+        <li><a href="/projects" class="nav-link {% if request.path == '/projects' %}active{% endif %}">Projects</a></li>
+        <li><a href="/experience" class="nav-link {% if request.path == '/experience' %}active{% endif %}">Experience</a></li>
+        <li><a href="/contact" class="nav-link {% if request.path == '/contact' %}active{% endif %}">Contact</a></li>
+    </ul>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="school-info">
+
+                <img src="{{ url_for('static', filename='school-logo.png') }}"
+                     alt="School Logo">
+
+                <div class="school-text">
+
+            <h4>University of Science and Technology of Southern Philippines</h4>
+
+            <p>Bachelor of Science in Information Technology</p>
+
+        </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-links">
+
+    <h3>Navigation</h3>
+
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/projects">Projects</a>
+    <a href="/experience">Experience</a>
+    <a href="/contact">Contact</a>
+
+</div>
+
+<div class="footer-links">
+
+    <h3>Connect</h3>
+
+    <a href="https://github.com/asleeeeeee" target="_blank">GitHub</a>
+
+    <a href="https://www.linkedin.com/in/ashley-cassandra-tucaling-66577433a/" target="_blank">LinkedIn</a>
+
+</div>
+
+        <div class="footer-contact">
+
+        <h3>Contact</h3>
+
+        <p><i class="fa-solid fa-phone"></i> +63 965 866 5601</p>
+
+        <p><i class="fa-solid fa-location-dot"></i> Cagayan de Oro City, Philippines</p>
+
+        <p class="email-link">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:tucaling.ashleycassandra@gmail.com">
+                tucaling.ashleycassandra@gmail.com
+            </a>
+        </p>
+
+    </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+    <p>
+        © 2026 Ashley Cassandra Tucaling. All rights reserved.
+    </p>
+
+    <p>
+        Built with Flask & Python
+    </p>
+
+</div>
+
+</footer>
+
+<script src="{{ url_for('static', filename='counter.js') }}"></script>
+</body>
+</html>
